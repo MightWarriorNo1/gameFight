@@ -22,6 +22,7 @@ import {
   StatusContainer,
   StartOver,
   Overlay,
+  Title,
 } from './styles';
 import 'twin.macro';
 
