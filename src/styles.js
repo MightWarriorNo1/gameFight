@@ -75,7 +75,7 @@ export const PlayerTwoInner = styled.div(({ health }) => [
 ]);
 
 export const Timer = tw.div`flex justify-center items-center rounded-2xl w-24 h-24 flex-shrink-0 bg-gradient-to-br from-gray-800 to-gray-900 border-width[3px] border-gray-600 box-shadow[0 8px 25px rgba(0,0,0,0.3)]`;
-export const Counter = tw.div`flex justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-500 w-20 h-20 rounded-full font-size[2.5rem] font-bold text-gray-900 box-shadow[0 4px 15px rgba(251, 191, 36, 0.4)]`;
+export const Counter = tw.div`flex justify-center items-center bg-gradient-to-br from-yellow-400 to-yellow-500 w-20 h-20 rounded-full font-size[2.5rem] font-bold text-gray-900 box-shadow[0 4px 15px rgba(251, 191, 36, 0.4)]`;
 
 export const Result = tw.div`font-size[4.5rem] font-bold text-white text-center bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent drop-shadow-2xl animate-pulse`;
 export const Overlay = styled.div(({ isStarted }) => [
