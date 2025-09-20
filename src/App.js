@@ -94,7 +94,7 @@ function App() {
       </div>
       <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto px-4 pt-20">
         <LeftSide>
-        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-600 shadow-xl">
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-600 shadow-xl">
           <h3 className="text-white font-bold text-lg mb-4 text-center bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             CONTROLS
           </h3>
@@ -107,7 +107,7 @@ function App() {
                 <Parag>• <span className="text-red-400">Space</span> - Attack</Parag>
               </div>
             </div>
-            <div className="border-t border-slate-600 pt-4">
+            <div className="border-t border-gray-600 pt-4">
               <div className="space-y-1">
                 <Parag><SpanBold>Player 2:</SpanBold></Parag>
                 <div className="space-y-1">
@@ -132,13 +132,13 @@ function App() {
         </Container>
       </MiddleSide>
       <RightSide>
-        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-600 shadow-xl">
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-600 shadow-xl">
           <h3 className="text-white font-bold text-lg mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             GAME INFO
           </h3>
           <div className="space-y-4">
             <div className="text-center">
-              <Parag className="text-slate-300 text-sm">
+              <Parag className="text-gray-300 text-sm">
                 First to reduce opponent's health to 0 wins!
               </Parag>
             </div>
@@ -146,8 +146,8 @@ function App() {
               <Parag><SpanBold>Timer:</SpanBold> {timer}s</Parag>
               <Parag><SpanBold>Status:</SpanBold> {isStarted ? 'Fighting!' : 'Ready to Start'}</Parag>
             </div>
-            <div className="border-t border-slate-600 pt-4">
-              <Parag className="text-xs text-slate-400 text-center">
+            <div className="border-t border-gray-600 pt-4">
+              <Parag className="text-xs text-gray-400 text-center">
                 Press PLAY to start the battle!
               </Parag>
             </div>

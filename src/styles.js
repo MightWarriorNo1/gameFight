@@ -40,17 +40,17 @@ export const Layout = tw.div`width[100vw] height[100vh] flex flex-col justify-ce
 export const LeftSide = tw.div`px-4 md:px-8 flex-1 flex flex-col items-end space-y-4 max-w-sm`;
 export const MiddleSide = tw.div`flex flex-col items-center z-10 flex-1 max-w-4xl`;
 export const RightSide = tw.div`px-4 md:px-8 flex-1 max-w-sm`;
-export const Parag = tw.p`text-slate-200 text-sm font-medium leading-relaxed`;
+export const Parag = tw.p`text-gray-200 text-sm font-medium leading-relaxed`;
 export const Title = tw.div`text-white font-size[2.5rem] font-bold mb-7 text-center bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent`;
-export const Footer = styled.div(({ smaller }) => [tw`text-slate-400 font-size[.9rem] font-light mb-2`, smaller && tw`font-size[.8rem]`]);
+export const Footer = styled.div(({ smaller }) => [tw`text-gray-400 font-size[.9rem] font-light mb-2`, smaller && tw`font-size[.8rem]`]);
 export const Link = tw.a`text-decoration[none] text-blue-400 hover:text-blue-300 transition-colors`;
 export const SpanBold = tw.span`font-bold text-white`;
-export const Container = tw.div`relative flex flex-col items-center border-width[2px] border-slate-600 rounded-2xl box-shadow[0 25px 50px rgba(0,0,0,0.5)] mb-8 bg-gradient-to-b from-slate-800/50 to-slate-900/50 backdrop-blur-sm w-full max-w-4xl mx-auto`;
+export const Container = tw.div`relative flex flex-col items-center border-width[2px] border-gray-600 rounded-2xl box-shadow[0 25px 50px rgba(0,0,0,0.5)] mb-8 bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-sm w-full max-w-4xl mx-auto`;
 export const TopBarContainer = tw.div`absolute flex flex-col items-center w-full z-20`;
 export const StatusContainer = tw.div`w-full flex px-6 py-6 justify-between items-center mb-6`;
 export const Canvas = tw.canvas`block rounded-lg`;
 
-export const PlayerOneBar = tw.div`bg-gradient-to-r from-red-600 to-red-500 w-full h-16 rounded-l-2xl relative overflow-hidden border-width[3px] border-right-width[0] border-slate-300 box-shadow[0 4px 15px rgba(239, 68, 68, 0.3)]`;
+export const PlayerOneBar = tw.div`bg-gradient-to-r from-red-600 to-red-500 w-full h-16 rounded-l-2xl relative overflow-hidden border-width[3px] border-right-width[0] border-gray-300 box-shadow[0 4px 15px rgba(239, 68, 68, 0.3)]`;
 export const PlayerOneInner = styled.div(({ health }) => [
   tw`absolute h-full right-0 transition[all 0.4s ease-out] box-shadow[0 0 20px rgba(34, 197, 94, 0.5)]`,
   css`
@@ -62,7 +62,7 @@ export const PlayerOneInner = styled.div(({ health }) => [
   `,
 ]);
 
-export const PlayerTwoBar = tw.div`bg-gradient-to-r from-red-600 to-red-500 w-full h-16 rounded-r-2xl relative overflow-hidden border-width[3px] border-left-width[0] border-slate-300 box-shadow[0 4px 15px rgba(239, 68, 68, 0.3)]`;
+export const PlayerTwoBar = tw.div`bg-gradient-to-r from-red-600 to-red-500 w-full h-16 rounded-r-2xl relative overflow-hidden border-width[3px] border-left-width[0] border-gray-300 box-shadow[0 4px 15px rgba(239, 68, 68, 0.3)]`;
 export const PlayerTwoInner = styled.div(({ health }) => [
   tw`absolute h-full transition[all 0.4s ease-out] box-shadow[0 0 20px rgba(34, 197, 94, 0.5)]`,
   css`
@@ -74,8 +74,8 @@ export const PlayerTwoInner = styled.div(({ health }) => [
   `,
 ]);
 
-export const Timer = tw.div`flex justify-center items-center rounded-2xl w-24 h-24 flex-shrink-0 bg-gradient-to-br from-slate-800 to-slate-900 border-width[3px] border-slate-600 box-shadow[0 8px 25px rgba(0,0,0,0.3)]`;
-export const Counter = tw.div`flex justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-500 w-20 h-20 rounded-full font-size[2.5rem] font-bold text-slate-900 box-shadow[0 4px 15px rgba(251, 191, 36, 0.4)]`;
+export const Timer = tw.div`flex justify-center items-center rounded-2xl w-24 h-24 flex-shrink-0 bg-gradient-to-br from-gray-800 to-gray-900 border-width[3px] border-gray-600 box-shadow[0 8px 25px rgba(0,0,0,0.3)]`;
+export const Counter = tw.div`flex justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-500 w-20 h-20 rounded-full font-size[2.5rem] font-bold text-gray-900 box-shadow[0 4px 15px rgba(251, 191, 36, 0.4)]`;
 
 export const Result = tw.div`font-size[4.5rem] font-bold text-white text-center bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent drop-shadow-2xl animate-pulse`;
 export const Overlay = styled.div(({ isStarted }) => [
@@ -83,7 +83,7 @@ export const Overlay = styled.div(({ isStarted }) => [
   isStarted && tw`opacity-0 pointer-events-none`,
 ]);
 export const StartOver = styled.div`  
-  ${tw`bg-gradient-to-br from-slate-800 to-slate-900 border-width[3px] border-slate-500 width[450px] flex justify-center items-center p-8 font-bold font-size[2.5rem] text-white rounded-3xl cursor-pointer box-shadow[0 20px 40px rgba(0,0,0,0.4)] transition[all 0.3s ease-in-out] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:border-blue-400 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-blue-500/50 focus:border-blue-400`}
+  ${tw`bg-gradient-to-br from-gray-800 to-gray-900 border-width[3px] border-gray-500 width[450px] flex justify-center items-center p-8 font-bold font-size[2.5rem] text-white rounded-3xl cursor-pointer box-shadow[0 20px 40px rgba(0,0,0,0.4)] transition[all 0.3s ease-in-out] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:border-blue-400 relative overflow-hidden focus:outline-none focus:ring-4 focus:ring-blue-500/50 focus:border-blue-400`}
   :hover {
     transform: scale(1.08) translateY(-2px);
   }
